@@ -1,11 +1,9 @@
 import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
 import React from 'react';
 
 const About = () => {
   return (
     <div>
-        <NavBar />
     <div className="bg-gray-100 min-h-screen py-10 px-6">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <h1 className="text-center text-3xl font-bold md:text-5xl animate-fade-in-up transition-all duration-500 ease-in-out transform hover:translate-y-[-5px] hover:text-black text-red-600">About Us</h1>
