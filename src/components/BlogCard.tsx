@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Card, CardContent, CardTittle } from "../components/ui/card";
 interface BlogCardProps {
   post: {
@@ -18,10 +19,12 @@ export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
         isDarkBackground ? "bg-slate-800 text-white" : "text-slate-800"
       } rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}
     >
-      <img
+      <Image
         src={post.image}
         alt={post.title}
         className="w-full h-48 object-cover rounded-t-lg"
+        width={600} 
+        height={300} 
       />
       <CardTittle className="text-xl font-normal mt-4 text-center">
         {" "}
